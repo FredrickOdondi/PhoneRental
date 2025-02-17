@@ -1,0 +1,18 @@
+<p class="notice"><%= notice %></p>
+
+<% content_for :title, "Rentals" %>
+
+<h1>Rentals</h1>
+
+<div id="rentals" class="rentals-list">
+  <% @rentals.each do |rental| %>
+    <div class="rental-item">
+      <%= render rental %>
+      <p>
+        <%= link_to "Show this rental", rental, class: "button" %>
+      </p>
+    </div>
+  <% end %>
+</div>
+
+<%= link_to "New rental", new_rental_path, class: "button new-rental-button" %>

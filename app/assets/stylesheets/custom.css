@@ -1,0 +1,273 @@
+body {
+  background-color: #2e2e2e;
+  color: #d3d3d3;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px; /* Reduced font size */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 20px;
+  background: #3e3e3e;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding-left: 10px;
+}
+
+h2, h1 {
+  text-align: center;
+  color: #d3d3d3;
+  font-size: 1.5em; /* Adjusted font size */
+}
+
+.field {
+  margin-bottom: 15px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #d3d3d3;
+  font-size: 0.9em; /* Adjusted font size */
+}
+
+.field input, .field select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #4e4e4e;
+  color: #d3d3d3;
+  font-size: 0.9em; /* Adjusted font size */
+}
+
+.actions {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.actions .submit-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4e4e4e;
+  color: #d3d3d3;
+  font-size: 0.9em; /* Adjusted font size */
+  cursor: pointer;
+}
+
+.actions .submit-button:hover {
+  background-color: #5e5e5e;
+}
+
+.actions .destroy-button {
+  background-color: #ff4d4d;
+}
+
+.actions .destroy-button:hover {
+  background-color: #ff1a1a;
+}
+
+.error-messages {
+  color: red;
+  margin-bottom: 20px;
+}
+
+.navbar {
+  background-color: #3e3e3e;
+  overflow: hidden;
+}
+
+.navbar-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-item {
+  padding: 14px 20px;
+}
+
+.navbar-item a {
+  color: #d3d3d3;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 0.9em; /* Adjusted font size */
+}
+
+.navbar-item a:hover {
+  background-color: #4e4e4e;
+  color: #d3d3d3;
+}
+
+.phone-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 0.9em; /* Adjusted font size */
+  text-align: left;
+}
+
+.phone-table th, .phone-table td {
+  padding: 12px 15px;
+  border: 1px solid #555;
+}
+
+.phone-table th {
+  background-color: #3e3e3e;
+  color: #d3d3d3;
+}
+
+.phone-table tr:nth-child(even) {
+  background-color: #4e4e4e;
+}
+
+.phone-table tr:hover {
+  background-color: #5e5e5e;
+}
+
+.phone-item {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #d3d3d3;
+  font-size: 0.9em; /* Adjusted font size */
+}
+
+.phone-item p {
+  margin: 10px 0;
+}
+
+.phone-item strong {
+  color: #d3d3d3;
+}
+
+.phone-item p strong {
+  display: inline-block;
+  width: 150px;
+}
+
+.terms-section {
+  background: #3e3e3e;
+  border: 1px solid #555;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.terms-section h1 {
+  color: #d3d3d3;
+  font-size: 1.2em; /* Adjusted font size */
+}
+
+.terms-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.terms-section li {
+  margin-bottom: 10px;
+  color: #d3d3d3;
+  font-size: 0.9em; /* Adjusted font size */
+}
+
+.rental-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #3e3e3e;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rental-item {
+  background: #3e3e3e;
+  border: 1px solid #555;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rental-item p {
+  margin: 10px 0;
+}
+
+.rental-item strong {
+  color: #d3d3d3;
+}
+
+.notice {
+  color: green;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.rentals-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4e4e4e;
+  color: #d3d3d3;
+  font-size: 0.9em; /* Adjusted font size */
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #5e5e5e;
+}
+
+.new-rental-button {
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.edit-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #3e3e3e;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cancel-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff4d4d;
+  color: #d3d3d3;
+  font-size: 0.9em; /* Adjusted font size */
+  cursor: pointer;
+}
+
+.cancel-button:hover {
+  background-color: #ff1a1a;
+}
+
+.back-link {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  color: #d3d3d3;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}

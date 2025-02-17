@@ -1,0 +1,56 @@
+<%= form_with(model: rental, local: true, html: { class: 'rental-form' }) do |form| %>
+  <% if rental.errors.any? %>
+    <div class="error-messages">
+      <h2><%= pluralize(rental.errors.count, "error") %> prohibited this rental from being saved:</h2>
+      <ul>
+        <% rental.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :id_number %>
+    <%= form.text_field :id_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone_number %>
+    <%= form.text_field :phone_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone_type %>
+    <%= form.text_field :phone_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rental_duration %>
+    <%= form.number_field :rental_duration %>
+  </div>
+
+  <div class="field">
+    <%= form.label :amount_paid %>
+    <%= form.text_field :amount_paid %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone_id %>
+    <%= form.collection_select :phone_id, Phone.all, :id, :model %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.collection_select :user_id, User.all, :id, :email %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit "Submit", class: "submit-button" %>
+  </div>
+<% end %>

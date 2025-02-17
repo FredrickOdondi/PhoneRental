@@ -1,0 +1,10 @@
+<p class="notice"><%= notice %></p>
+
+<%= render @rental %>
+
+<div class="actions">
+  <%= link_to "Edit this rental", edit_rental_path(@rental), class: "button" %> |
+  <%= link_to "Back to rentals", rentals_path, class: "button" %>
+
+  <%= button_to "Destroy this rental", @rental, method: :delete, class: "button destroy-button" %>
+</div>

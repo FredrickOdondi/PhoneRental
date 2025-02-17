@@ -1,0 +1,45 @@
+
+
+<% if user_signed_in? %>
+  <h1>Welcome back <%= current_user.email %></h1>
+  <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+<% else %>
+  <h1>Welcome</h1>
+  <%= link_to "Sign Up", new_user_registration_path %> |
+  <%= link_to "Login", new_user_session_path %>
+<% end %>
+<h1>Available Phones</h1>
+<table class="phone-table">
+  <thead>
+    <tr>
+      <th>Brand</th>
+      <th>Model</th>
+      <th>Price</th>
+      <th>Storage Capacity</th>
+      <th>Color</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @phones.each do |phone| %>
+      <%= render 'phones/phone', phone: phone %>
+    <% end %>
+  </tbody>
+</table>
+
+<div class="terms-section">
+  <h1>Terms of Renting a Phone</h1>
+  <p>By renting a phone, you agree to the following terms:</p>
+  <ul>
+    <li>Phones must be returned in the same condition as they were received.</li>
+    <li>Phones must be returned within 30 days of the rental date.</li>
+    <li>Phones must be returned with all accessories included in the rental.</li>
+  </ul>
+</div>
+<h1>Phone Rental Form</h1>
+<%= render 'rentals/form', rental: @rental %>
+<%= render 'home/about', home: @home %>
+
+
+
+
+
