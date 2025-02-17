@@ -1,4 +1,4 @@
-# PhoneRental
+```markdown
 # Phone Rental App
 
 A Ruby on Rails application that allows tourists to rent phones. This app uses Devise for user authentication and provides a simple interface for managing phones and rentals.
@@ -45,10 +45,117 @@ Before you begin, ensure you have the following installed:
    ```bash
    git clone https://github.com/yourusername/phone-rental-app.git
    cd phone-rental-app
-   bundle install
-yarn install
+   ```
 
-rails db:create
-rails db:migrate
-rails db:seed
-```
+2. **Install Dependencies**
+
+   ```bash
+   bundle install
+   yarn install
+   ```
+
+3. **Set Up the Database**
+
+   ```bash
+   rails db:create
+   rails db:migrate
+   rails db:seed
+   ```
+
+4. **Start the Server**
+
+   ```bash
+   rails server
+   ```
+
+5. **Access the App**
+
+   Open your browser and navigate to `http://localhost:3000`.
+
+---
+
+## Usage
+
+### User Roles
+
+- **Tourist**: Can browse available phones, create rental requests, and view their rental history.
+- **Admin**: Can manage phones and view all rentals.
+
+### Key Actions
+
+- **Sign Up / Log In**: Use the navigation bar to sign up or log in.
+- **Browse Phones**: Visit the `/phones` page to view available phones.
+- **Rent a Phone**: Click "Rent" on a phone and specify the rental period.
+- **Manage Rentals**: View and manage your rentals from the user dashboard.
+
+---
+
+## Database Schema
+
+### Users Table
+
+| Column Name         | Type        | Description                     |
+|---------------------|-------------|---------------------------------|
+| id                  | integer     | Unique identifier               |
+| email               | string      | User's email address            |
+| encrypted_password  | string      | Encrypted password              |
+| created_at          | datetime    | Timestamp of creation           |
+| updated_at          | datetime    | Timestamp of last update        |
+
+### Phones Table
+
+| Column Name         | Type        | Description                     |
+|---------------------|-------------|---------------------------------|
+| id                  | integer     | Unique identifier               |
+| name                | string      | Name of the phone               |
+| description         | text        | Description of the phone        |
+| price_per_day       | decimal     | Daily rental price              |
+| status              | string      | Availability status ("available" or "rented") |
+| created_at          | datetime    | Timestamp of creation           |
+| updated_at          | datetime    | Timestamp of last update        |
+
+### Rentals Table
+
+| Column Name         | Type        | Description                     |
+|---------------------|-------------|---------------------------------|
+| id                  | integer     | Unique identifier               |
+| user_id             | integer     | ID of the renting user          |
+| phone_id            | integer     | ID of the rented phone          |
+| start_date          | date        | Start date of the rental        |
+| end_date            | date        | End date of the rental          |
+| total_price         | decimal     | Total rental cost               |
+| status              | string      | Rental status ("confirmed", "pending", or "completed") |
+| created_at          | datetime    | Timestamp of creation           |
+| updated_at          | datetime    | Timestamp of last update        |
+
+---
+
+## Contributing
+
+We welcome contributions! To contribute:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature`).
+3. Commit your changes (`git commit -am 'Add some feature'`).
+4. Push to the branch (`git push origin feature/your-feature`).
+5. Open a pull request.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## Contact
+
+For questions or feedback, feel free to reach out:
+
+- Email: fredrickodondi9@gmail.com
+- GitHub: [Your GitHub Profile](https://github.com/FredrickOdondi)
+
+---
+``` 
+
+This README provides a comprehensive overview of your project, including installation instructions, usage details, and database schema. You can customize it further based on your specific needs.
