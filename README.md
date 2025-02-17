@@ -1,4 +1,4 @@
-```markdown
+
 # Phone Rental App
 
 A Ruby on Rails application that allows tourists to rent phones. This app uses Devise for user authentication and provides a simple interface for managing phones and rentals.
