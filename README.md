@@ -48,4 +48,7 @@ Before you begin, ensure you have the following installed:
    bundle install
 yarn install
 
+rails db:create
+rails db:migrate
+rails db:seed
 ```
