@@ -145,6 +145,8 @@ We welcome contributions! To contribute:
 ---
 ![Alt text](https://github.com/user-attachments/assets/3e499f26-cb5e-4af3-bd2c-1336d128d79b)
 ![Alt text](https://github.com/user-attachments/assets/33404fb6-0ef1-4f4a-ab03-227f7f134526)
+![Alt text](https://github.com/user-attachments/assets/6a72f612-7aa8-415b-9d23-1b975460e94d)
+![Alt text](https://github.com/user-attachments/assets/611d3990-67c1-4cc3-9c3c-31668b5ef541)
 
 
 
